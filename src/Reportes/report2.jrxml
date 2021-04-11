@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="da02ae0c-e213-42d9-82e2-61864866636c">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="id" class="java.lang.Integer"/>
+	<field name="fecha" class="java.sql.Date"/>
+	<field name="usuario" class="java.lang.String"/>
+	<field name="reservorio" class="java.lang.String"/>
+	<field name="alarma" class="java.lang.String"/>
+	<field name="horario" class="java.sql.Time"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="23" y="2" width="23" height="20" uuid="7d52fb00-a2df-40ec-b23a-c5cd26268e44"/>
+				<text><![CDATA[id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="71" y="2" width="46" height="20" uuid="476d2419-30e8-4ffc-bbc9-c045ae566bcb"/>
+				<text><![CDATA[fecha]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="143" y="2" width="63" height="20" uuid="22f883c5-16cd-41b4-ae3d-def79ea26bb9"/>
+				<text><![CDATA[usuario]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="217" y="2" width="61" height="20" uuid="09328e36-6dc7-4328-8108-9d114f9bc3f4"/>
+				<text><![CDATA[reservorio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="309" y="2" width="60" height="20" uuid="91e65131-87d7-4dd2-b579-85173bb783df"/>
+				<text><![CDATA[alarma]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="2" width="64" height="20" uuid="82b9b15b-9c50-44bf-ab08-3b8d51080644"/>
+				<text><![CDATA[horario]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="23" y="38" width="23" height="20" uuid="50d6da38-d8df-4c36-ac86-89ab3f2b30b8"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="71" y="38" width="46" height="20" uuid="6be04bf9-6a99-4952-b913-1aefa1d301f0"/>
+				<textFieldExpression><![CDATA[$F{fecha}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="143" y="38" width="63" height="20" uuid="a95439cd-5e9a-426c-9e10-b94674dfca6c"/>
+				<textFieldExpression><![CDATA[$F{usuario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="217" y="38" width="61" height="20" uuid="267107e4-675d-47cc-9f7e-518a7f2d4ff2"/>
+				<textFieldExpression><![CDATA[$F{reservorio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="309" y="38" width="60" height="20" uuid="ca5a4131-c354-4dfc-abf2-1f34abd6c03a"/>
+				<textFieldExpression><![CDATA[$F{alarma}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="38" width="64" height="20" uuid="1f7fe82f-254d-47d2-8ca5-53bbbbe75d29"/>
+				<textFieldExpression><![CDATA[$F{horario}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
